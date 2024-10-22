@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            height: 600px;
+            width: 450px;
+            border: 2px solid #ff0000;
+            margin: 30px auto;
+            background-color:#ffe6e6;
+            border-radius: 10px;
+
+            
+        }
+        .mo1{
+            height: 300px;
+            margin-left: 90px;
+        }
+        
+        .mo2{
+            height: 200px;
+            margin: 20px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .btn{
+            height: 50px;
+            width: 150px;
+            margin-left: 150px;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #b3b3ff;
+            border: 2px solid #1a1aff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <img src="./img/K20ProRed-removebg-preview.png" alt="" class="mo1" id="main-c"><br>
+        <img src="./img/mo1.png" alt="" class="mo2" onclick="change(1)">
+        <img src="./img/mo3.png" alt="" class="mo2" onclick="change(2)">
+        <img src="./img/K20ProRed-removebg-preview.png" alt="" class="mo2"onclick="change(3)">
+        <button class="btn">Shop now</button>
+    </div>
+    <script>
+        function change(n) {
+            var images = document.getElementById("main-c");
+        switch(n){
+            case 1:
+                images.src = "./img/mo1.png";
+                break;
+                case 2:
+                    images.src = "./img/mo3.png";
+                    break;
+                    case 3:
+                    images.src = './img/K20ProRed-removebg-preview.png'
+            
+        }
+
+      
+    }
+        
+    </script>
+</body>
+</html>
